@@ -3,7 +3,7 @@
 
 ### Технологии
 * CSS
-* Bootstrap
+* Foundation
 * Angular Seed
 * Bower
 * Firebase
