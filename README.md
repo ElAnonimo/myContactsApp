@@ -1,5 +1,5 @@
 # Описание
-[![Build Status](https://secure.travis-ci.org/javadev/myContactsApp.svg)](https://travis-ci.org/javadev/myContactsApp)
+[![Build Status](https://secure.travis-ci.org/ElAnonimo/myContactsApp.svg)](https://travis-ci.org/ElAnonimo/myContactsApp)
 
 Страница, отображающая список контактов пользователя. Контакты размещены на облачной БД Firebase. Пользователь может добавлять, редактировать, удалять записи.
 
