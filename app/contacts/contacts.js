@@ -30,13 +30,13 @@ angular.module('myContacts.contacts', ['ngRoute', 'firebase'])
 		$scope.name = contact.name;
 		$scope.email = contact.email;
 		$scope.company = contact.company;
-		$scope.work_phone = contact.phones[0].work;
-		$scope.home_phone = contact.phones[0].home;
-		$scope.mobile_phone = contact.phones[0].mobile;
-		$scope.street_address = contact.address[0].street_address;
-		$scope.city = contact.address[0].city;
-		$scope.state = contact.address[0].state;
-		$scope.zipcode = contact.address[0].zipcode;
+		$scope.work_phone = !!contact.phones && contact.phones.length > 0 ? contact.phones[0].work : null;
+		$scope.home_phone = !!contact.phones && contact.phones.length > 0 ? contact.phones[0].home : null;
+		$scope.mobile_phone = !!contact.phones && contact.phones.length > 0 ? contact.phones[0].mobile : null;
+		$scope.street_address = !!contact.address && contact.address.length > 0 ? contact.address[0].street_address : null;
+		$scope.city = !!contact.address && contact.address.length > 0 ? contact.address[0].city : null;
+		$scope.state = !!contact.address && contact.address.length > 0 ? contact.address[0].state : null;
+		$scope.zipcode = !!contact.address && contact.address.length > 0 ? contact.address[0].zipcode : null;
 	}
 	
 	// hide add form
@@ -135,13 +135,13 @@ angular.module('myContacts.contacts', ['ngRoute', 'firebase'])
 		$scope.name = contact.name;
 		$scope.email = contact.email;
 		$scope.company = contact.company;
-		$scope.work_phone = contact.phones[0].work;
-		$scope.home_phone = contact.phones[0].home;
-		$scope.mobile_phone = contact.phones[0].mobile;
-		$scope.street_address = contact.address[0].street_address;
-		$scope.city = contact.address[0].city;
-		$scope.state = contact.address[0].state;
-		$scope.zipcode = contact.address[0].zipcode;
+		$scope.work_phone = !!contact.phones && contact.phones.length > 0 ? contact.phones[0].work : null;
+		$scope.home_phone = !!contact.phones && contact.phones.length > 0 ? contact.phones[0].home : null;
+		$scope.mobile_phone = !!contact.phones && contact.phones.length > 0 ? contact.phones[0].mobile : null;
+		$scope.street_address = !!contact.address && contact.address.length > 0 ? contact.address[0].street_address : null;
+		$scope.city = !!contact.address && contact.address.length > 0 ? contact.address[0].city : null;
+		$scope.state = !!contact.address && contact.address.length > 0 ? contact.address[0].state : null;
+		$scope.zipcode = !!contact.address && contact.address.length > 0 ? contact.address[0].zipcode : null;
 		
 		$scope.contactShow = true;
 	}
